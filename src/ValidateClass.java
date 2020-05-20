@@ -5,10 +5,10 @@ public class ValidateClass {
     private static Pattern pattern;
     private Matcher matcher;
 
-    private static final String EMAIL_REGEX = "^[ACP][0-9]{4}[GHIKLM]$";
+    private static final String REGEX = "^[ACP][0-9]{4}[GHIKLM]$";
 
     public ValidateClass() {
-        pattern = Pattern.compile(EMAIL_REGEX);
+        pattern = Pattern.compile(REGEX);
     }
 
     public boolean validate(String regex) {
